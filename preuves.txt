@@ -22,10 +22,18 @@ if (codePlat === 1) {
 console.log(prixUnitaire);
 resultats PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
 1500           
-PS C:\Users\HP\Desktop\cantine-Nom-Prenom>
-après on change chaque codePlat par 2 et 3 o obtient
-PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
-2000
-PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
-1000
 
+après on change chaque codePlat par 2 et 3 o obtient
+
+2000
+
+// Fonction de calcul du total
+function calculerTotal(prixUnitaire,quantite) {
+    return prixUnitaire*quantite;
+}
+let total = calculerTotal(prixUnitaire,quantite);
+console.log(total);
+PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
+6000
+après on a tster 2 et 3
+6000 et 3000
