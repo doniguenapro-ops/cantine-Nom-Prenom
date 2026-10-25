@@ -1,8 +1,8 @@
 //Déclarez les données de la commande
 let client = "Awa";
-let codePlat = 1;
-let quantite = Number("3");
-let montantVerse = 5000;
+let codePlat = 3;
+let quantite = Number("4");
+let montantVerse = 4000;
 
 // Déterminer le plat et son prix
 let prixUnitaire;
@@ -23,6 +23,14 @@ console.log( `Client : ${client}`);
 console.log(`Total à payer : ${total}FCFA`);
 for (let i = 1; i <= quantite; i++) {
     console.log(`portion ${i} : ${prixUnitaire} FCFA`);
+}
+    // Calculer la monnaie ou le montant manquant
+if (montantVerse >= total) {
+    let monnaie = montantVerse - total;
+    console.log(`Monnaie à rendre : ${monnaie} FCFA`);
+}else{
+    let manque = total - montantVerse;
+    console.log(`Montant manquant : ${manque} FCFA`);
 }
 
 

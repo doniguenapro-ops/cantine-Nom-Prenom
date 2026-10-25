@@ -50,3 +50,37 @@ Total à payer : 4500FCFA
 portion 1 : 1500 FCFA
 portion 2 : 1500 FCFA
 portion 3 : 1500 FCFA
+ // Calculer la monnaie ou le montant manquant
+if (montantVerse >= total) {
+    let monnaie = montantVerse - total;
+    console.log(`Monnaie à rendre : ${monnaie} FCFA`);
+}else{
+    let manque = total - montantVerse;
+    console.log(`Montant manquant : ${manque} FCFA`);
+}
+resultats
+PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
+Client : Awa
+Total à payer : 4500FCFA
+portion 1 : 1500 FCFA
+portion 2 : 1500 FCFA
+portion 3 : 1500 FCFA
+Monnaie à rendre : 500 FCFA
+
+Test 2
+PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
+Client : Awa
+Total à payer : 4000FCFA
+portion 1 : 2000 FCFA
+portion 2 : 2000 FCFA
+Montant manquant : 1000 FCFA
+
+Test 3
+PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
+Client : Awa
+Total à payer : 4000FCFA
+portion 1 : 1000 FCFA
+portion 2 : 1000 FCFA
+portion 3 : 1000 FCFA
+portion 4 : 1000 FCFA
+Monnaie à rendre : 0 FCFA
