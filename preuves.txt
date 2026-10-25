@@ -37,3 +37,16 @@ PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
 6000
 après on a tster 2 et 3
 6000 et 3000
+
+// Afficher le récapitulatif
+console.log( `Client : ${client}`);
+console.log(`Total à payer : ${total}FCFA`);
+for (let i = 1; i <= quantite; i++) {
+    console.log(`portion ${i} : ${prixUnitaire} FCFA`);
+}
+PS C:\Users\HP\Desktop\cantine-Nom-Prenom> node cantine.js
+Client : Awa
+Total à payer : 4500FCFA
+portion 1 : 1500 FCFA
+portion 2 : 1500 FCFA
+portion 3 : 1500 FCFA

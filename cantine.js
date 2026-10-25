@@ -18,7 +18,14 @@ function calculerTotal(prixUnitaire,quantite) {
     return prixUnitaire*quantite;
 }
 let total = calculerTotal(prixUnitaire,quantite);
-console.log(total);
+    // Afficher le récapitulatif
+console.log( `Client : ${client}`);
+console.log(`Total à payer : ${total}FCFA`);
+for (let i = 1; i <= quantite; i++) {
+    console.log(`portion ${i} : ${prixUnitaire} FCFA`);
+}
+
+
 
 
 
